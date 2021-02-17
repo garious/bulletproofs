@@ -17,7 +17,7 @@ description = "A pure-Rust implementation of Bulletproofs using Ristretto"
 edition = "2018"
 
 [dependencies]
-curve25519-dalek = { package = "curve25519-dalek-ng", version = "4", default-features = false, features = ["u64_backend", "serde"] }
+curve25519-dalek = { package = "curve25519-dalek-ng", version = "4", default-features = false, features = ["u64_backend", "serde", "borsh"], git = "https://github.com/garious/curve25519-dalek", rev = "fcef1fa11b3d3e89a1abf8986386ba9ae375392c" }
 subtle = { package = "subtle-ng", version = "2.4", default-features = false }
 sha3 = { version = "0.9.1", default-features = false }
 digest = { version = "0.9.0", default-features = false }
